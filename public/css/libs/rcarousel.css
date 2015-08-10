@@ -1,0 +1,180 @@
+
+.col-10{
+    height: 300px;
+}
+
+
+.description{
+    font-size: 12px;
+    line-height: 18px;
+    color:#646565;
+}
+.slides {
+    background: none;
+}
+.doctor li{
+    margin-top:0!important;
+
+}
+.team-slider ul li p{
+    color:#c3c3c3;
+    font-size: 12px;
+
+}
+.team-slider ul li h1{
+color: #000000;
+}
+.teamgrid {
+    margin-top: 40px!important;
+    margin-bottom: 70px;
+}
+.teamgrid .team-slider .col-3 {
+    margin-bottom: 20px;
+}
+
+section.team .col-2 {
+    position: relative;
+    margin-top: 21px;
+
+}
+section.team span.prev,
+section.team span.next {
+    display: block;
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+section.team span.prev.prev,
+section.team span.next.prev {
+    background: url("../images/arrow-left.png") no-repeat center;
+    right: 40px;
+    top: 180px;
+    margin-top: -15px;
+}
+section.team span.prev.prev:hover,
+section.team span.next.prev:hover {
+    background: url("../images/arrow-left2.png") no-repeat center;
+}
+section.team span.prev.next,
+section.team span.next.next {
+    background: url("../images/arrow-right.png") no-repeat center;
+    right: 10px;
+    top: 180px;
+    margin-top: -15px;
+}
+section.team span.prev.next:hover,
+section.team span.next.next:hover {
+    background: url("../images/arrow-right2.png") no-repeat center;
+}
+section.team .our {
+    margin-top: 55px;
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    color: #353535;
+    padding-right: 10px;
+    font-weight: 300;
+
+
+  }
+section.team .team {
+    display: block;
+    text-align: right;
+    font-size: 40px;
+    font-weight: 300;
+    padding-right: 10px;
+
+
+}
+section.team .ultra_bold{
+    font-weight: 800;
+}
+
+section.team .team-slider {
+    max-width: 738px;
+    width: 100%;
+    float: right;
+    padding-top:60px;
+}
+section.team .team-slider li {
+    opacity: 0;
+
+    transition: all 0.3s ease;
+}
+section.team .team-slider .col-3 {
+    display: block;
+    position: relative;
+    padding: 0 10px;
+    width: 32%;
+}
+
+section.team .team-slider .col-3 img {
+
+    height: auto;
+
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+    background-clip: padding-box;
+
+    /* Firefox 10+, Firefox on Android */
+
+
+    transition: all 0.3s ease;
+}
+section.team .team-slider .col-3 a {
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    text-transform: none;
+    transition: all 0.3s ease;
+    line-height: 40px;
+    font-weight: 700;
+
+}
+section.team .team-slider .col-3 a:hover {
+
+    text-decoration: underline;
+    color: #52a89d;
+}
+section.team .team-slider .col-3 p {
+    text-align: left;
+    font-size: 11px;
+    color: #a3a3a3;
+    margin-bottom: 5px;
+    margin-top: -9px;
+
+}
+section.team .team-slider .col-3 .hover {
+    display: block;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: -50%;
+    background: #fff;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+section.team .team-slider .col-3 .hover:before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: -8px;
+    background: url(../images/left.png) no-repeat center;
+    width: 14px;
+    height: 8px;
+    left: 50%;
+    margin-left: -7px;
+}
+section.team .team-slider .col-3 .hover a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 22px 7px 0;
+    transition: all 0.3s ease;
+}
+

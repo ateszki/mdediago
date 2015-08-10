@@ -1,0 +1,463 @@
+@media (max-width: 1800px) {
+  .slider-wrapper .top-slider .flex-direction-nav a.flex-prev {
+    left: 0;
+    width: 10%;
+    background-position: 50% 50%;
+  }
+  .slider-wrapper .top-slider .flex-direction-nav a.flex-prev:hover {
+    background-position: 50% 50%;
+  }
+  .slider-wrapper .top-slider .flex-direction-nav a.flex-next {
+    right: 0;
+    width: 10%;
+    background-position: 50% 50%;
+  }
+  .slider-wrapper .top-slider .flex-direction-nav a.flex-next:hover {
+    background-position: 50% 50%;
+  }
+}
+/* Laptop
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+@media (max-width: 1100px) {
+  
+}
+/* Tablets
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+@media (max-width: 980px) {
+  .wrapper .gallery_tab .gallery_le {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .wrapper .gallery_tab .gallery_le #main {
+    margin: 0 auto;
+  }
+  .wrapper .gallery_tab .tab_slide {
+    width: 90%;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  .wrapper .gallery_tab .tab_slide .akordeon {
+    width: 100%;
+  }
+  .wrapper .gallery_tab .tab_slide .akordeon-heading {
+    font-size: 12px;
+    word-wrap: break-word;
+  }
+  .wrapper .gallery_tab .tab_slide .akordeon-icon {
+    display: none;
+  }
+  .wrapper {
+    width: 95%;
+  }
+  .header .menu2 .vertical-line3 {
+    display: none;
+  }
+  .header .mobile-menu {
+    display: block;
+    float: right;
+    margin-right: 15px;
+    margin-top: -10px;
+  }
+  .header .mobile-menu select {
+    padding: 5px 10px;
+    background: #e7f4f1;
+    border-color: #64baa9;
+    color: #64baa9;
+    width: 150px;
+  }
+  .top-slider ul.slides li .contry p {
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 860px) {
+  .servcats .col-4 {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 30px;
+  }
+  .twitterwidget .col-3 {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  .twitterwidget .col-3 .float-left {
+    float: none!important;
+  }
+  .twitterwidget .col-9 {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    float: none;
+    text-align: center;
+    background: none;
+    padding-left: 0;
+  }
+  .list-left,
+  .list-right {
+    width: 100%;
+    float: none;
+  }
+  .list-left ul li,
+  .list-right ul li {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .list-left ul li::before,
+  .list-right ul li::before,
+  .list-left ul li::after,
+  .list-right ul li::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .list-left::before,
+  .list-right::before,
+  .list-left::after,
+  .list-right::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .grid1 {
+    float: none;
+    margin-top: 10px;
+  }
+  .list-left ul li,
+  .list-right ul li {
+    text-align: center;
+  }
+  .blok {
+    margin: 0;
+  }
+  .about-as {
+    margin-top: 50px;
+  }
+  .about-as .photo,
+  .about-as .about {
+    width: 100%;
+    float: none;
+  }
+  .about-as .about .text2 {
+    text-align: center;
+  }
+  .about-as div.text-color {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 90%;
+    text-align: center;
+  }
+  .about-as div.text-color p {
+    width: 100%;
+    text-align: center;
+  }
+  .about-as .about .icon {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .ease .col-6 {
+    width: 100%;
+    float: none;
+  }
+  .ease .col-6 .ease-align {
+    margin-top: 45px;
+    text-align: center;
+  }
+  .ease .col-6 .ease-align .ease-content {
+    max-width: 100%;
+  }
+  .ease .col-6 .iphone {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  section.team .col-2 {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  section.team .col-10 {
+    width: 100%;
+    float: none;
+  }
+  section.team .our,
+  section.team .team {
+    display: inline-block !important;
+    float: none!important;
+    text-align: center!important;
+    padding: 0!important;
+    margin: 0!important;
+  }
+  section.team span.prev.prev,
+  section.team span.next.prev {
+    top: 70px!important;
+    right: auto!important;
+    left: 10px!important;
+  }
+  section.team span.prev.next,
+  section.team span.next.next {
+    top: 70px!important;
+    right: 10px!important;
+  }
+  .wrapper .fasilites_le .list-left2 li {
+    width: 50%;
+  }
+}
+/* Landskape Phone to Small Desktop & Portrait Tablet
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+@media (max-width: 767px) {
+  .bloc2 .col-3 {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .bloc2 .col-6 {
+    width: 100%;
+  }
+  .bloc2 .col-6 .vertical-line {
+    border-left: 0px;
+  }
+  .header .menu-line {
+    height: 100px;
+  }
+  .top-slider ul.slides li .contry p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .header .menu-line .left-list {
+    width: 100%;
+    text-align: center;
+  }
+  .header .menu-line .left-list ul li {
+    float: none;
+  }
+  .header .menu-line .right-list {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .numbers_le {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .wrapper .video_inside {
+    width: 90%;
+    height: 250px;
+  }
+  .wrapper .video_inside iframe {
+    width: 100%;
+    height: 250px;
+  }
+  .isotope3 .phone_le,
+  .isotope3 .street_le,
+  .isotope3 .email_le {
+    width: 100%;
+    margin-bottom: 20px;
+    float: none;
+  }
+  .grupes .col-3 {
+    width: 49%;
+  }
+}
+@media (max-width: 680px) {
+  .content3 .leftbar {
+    width: 100%;
+    float: none;
+  }
+  .content3 .sidebar {
+    width: 100%;
+    float: none;
+  }
+  .content2 .left_bar {
+    width: 100%;
+    float: none;
+    overflow: hidden;
+  }
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+}
+@media (max-width: 640px) {
+  .about_doctors .doctors_photo {
+    width: 100%;
+    float: none;
+  }
+  .about_doctors .doctors_information {
+    width: 100%;
+    margin-left: 0;
+    overflow: visible;
+  }
+  .left-side-contact {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .right-side-contact {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .top-slider ul.slides li .contry .button1 {
+    display: none;
+  }
+  .price {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .minimum {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    float: none;
+  }
+  .premium,
+  .medium {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .blogonhome .col-3 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .wrapper .icon_le {
+    margin-left: 0;
+  }
+}
+/* Up to Landskape Phone
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+@media (max-width: 480px) {
+  .image-set ul li {
+    width: 100%;
+    float: none;
+  }
+  .image-set ul li img {
+    width: 100%;
+    height: auto;
+  }
+  .wrapper .gallery_tab .gallery_le #main {
+    width: 100%;
+  }
+  .wrapper .gallery_tab .gallery_le #main img {
+    max-width: 100%;
+    height: auto;
+  }
+  .wrapper .fasilites_le .list-left2 li {
+    width: 100%;
+  }
+  .header .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header .menu2 {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+    padding-top: 5px;
+  }
+  .header {
+    padding-bottom: 20px;
+  }
+  .list-left ul li,
+  .list-right ul li {
+    width: 100%;
+  }
+  .grid1 {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .grid1 ul li {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .grid1 ul li.child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .grid1 ul li input,
+  .grid1 ul li textarea {
+    width: 80%;
+  }
+  section.team .team-slider .col-3 {
+    width: 90%!important;
+    margin: 0 auto!important;
+    margin-bottom: 20px!important;
+    float: none!important;
+    text-align: center!important;
+  }
+  section.team .team-slider .col-3 p {
+    text-align: center!important;
+  }
+  span.value4 {
+    font-size: 30px;
+  }
+  .wrapper .icon1_le .col-3,
+  .wrapper .icon2_le .col-3,
+  .wrapper .icon3_le .col-3 {
+    margin-right: 20px;
+    background: none;
+    padding-left: 0;
+  }
+}
+/* Up to Portrait Phone
+/* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+@media (max-width: 400px) {
+  .header .menu2 .search-box {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .header .menu2 .search-box .form_box {
+    margin-left: -80px;
+    margin-top: 20px;
+  }
+  .header .mobile-menu {
+    margin: 0 auto;
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .servcats .col-4 {
+    width: 100%;
+  }
+  .grupes .col-3 {
+    width: 100%;
+  }
+  .element-item {
+    width: 100%;
+    float: none;
+  }
+  .header .menu2 {
+    width: 80%;
+  }
+  .blogonhome .col-3 {
+    width: 100%;
+  }
+  .about-as .icon1 .col-icon,
+  .about-as .icon2 .col-icon,
+  .about-as .icon3 .col-icon {
+    background: none;
+    padding-left: 10px;
+  }
+  .ease .col-6:last-child {
+    display: none;
+  }
+  .bloc2 .col-3 {
+    width: 100%;
+  }
+  .bloc2 .vertical-line {
+    height: auto;
+  }
+}

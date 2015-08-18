@@ -19,7 +19,7 @@ class CreateCoberturasTable extends Migration {
 			$table->char('tipo',2); //OS obra social, PP Prepaga
 			$table->string('domicilio',512)->nullable();
 			$table->string('lat')->nullable();
-			$table->string('lon')->nulalble();
+			$table->string('lon')->nullalble();
 			$table->integer('pais_id')->unsigned()->nullable();
 			$table->integer('provincia_id')->unsigned()->nullable();
 			$table->integer('localidad_id')->unsigned()->nullable();

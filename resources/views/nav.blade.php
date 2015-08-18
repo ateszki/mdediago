@@ -10,15 +10,20 @@
  <div style=" float:left;border-radius:0px 6px 6px 0px; margin-top:-11px; background-color:#02aabb; text-align:center; padding-top:10px; width:40px; height:40px; margin-right:20px;"><div class="fa fa-search" style="color:#FFF;"></div></div>
       <ul class="vertical-line3 cf">
       
-        <li><a href="index.html">Profesionales</a>
+        <li><a href="#">Profesionales</a>
           <ul>
-            <li><a href="search_list_region.html">Por Región</a></li>
-            <li><a href="search_list_especialidad.html">Por Especialidad</a></li>
+            <li><a href="{{URL::to('regiones')}}">Por Región</a></li>
+            <li><a href="{{URL::to('especialidades')}}">Por Especialidad</a></li>
             <li><a href="doctors_inside.html">Por profesional</a>
             </li>
           </ul>
         </li>
-         <li><a href="registro.html">Registrarme</a></li>
+         <li><a href="#">Registrarme</a>
+            <ul>
+              <li><a href="{{URL::to('registro')}}">soy pacientes</a></li>
+              <li><a href="{{URL::to('registro-profesionales')}}">soy profesional o centro médico</a></li>
+            </ul>
+         </li>
         <li><a href="ingresar.html">Ingresar</a></li>
       </ul>
       <div class="mobile-menu"> <select>

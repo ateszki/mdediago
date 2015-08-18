@@ -145,6 +145,10 @@ return [
 		'App\Providers\EventServiceProvider',
 		'App\Providers\RouteServiceProvider',
 
+		/* adicionales*/
+		Laravel\Socialite\SocialiteServiceProvider::class,
+	    'Cviebrock\EloquentSluggable\SluggableServiceProvider',
+
 	],
 
 	/*
@@ -192,6 +196,7 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		'Socialite' => Laravel\Socialite\Facades\Socialite::class,
 
 	],
 

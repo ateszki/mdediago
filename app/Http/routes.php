@@ -11,14 +11,18 @@
 |
 */
 
-Route::get('/', 'FrontController@index');
+//Route::get('/', 'FrontController@index');
+Route::get('/', function ()    {
+    return view('mantenimiento');
+});
+
 Route::get('/regiones/{nombre_provincia}/{nombre_localidad}','RegionesController@localidad');
 Route::get('/regiones/{nombre_provincia}','RegionesController@localidades');
 Route::get('/regiones','RegionesController@index');
 Route::get('/especialidades/{nombre_especialidad}','RegionesController@especialidad');
 Route::get('/especialidades','RegionesController@especialidades');
 
-Route::get('home', 'HomeController@index');
+Route::get('home', 'FrontController@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

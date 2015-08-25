@@ -14,8 +14,7 @@
           <ul>
             <li><a href="{{URL::to('regiones')}}">Por Región</a></li>
             <li><a href="{{URL::to('especialidades')}}">Por Especialidad</a></li>
-            <li><a href="doctors_inside.html">Por profesional</a>
-            </li>
+            <!--<li><a href="doctors_inside.html">Por profesional</a></li>-->
           </ul>
         </li>
          @if(Auth::check())
@@ -24,7 +23,7 @@
          @else
          <li><a href="#">Registrarme</a>
             <ul>
-              <li><a href="{{URL::to('registro')}}">soy pacientes</a></li>
+              <li><a href="{{URL::to('auth/register')}}">soy pacientes</a></li>
               <li><a href="{{URL::to('registro-profesionales')}}">soy profesional o centro médico</a></li>
             </ul>
          </li>

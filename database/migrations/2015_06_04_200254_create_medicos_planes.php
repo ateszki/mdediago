@@ -12,7 +12,7 @@ class CreateMedicosPlanes extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('medicos_planes', function(Blueprint $table)
+		Schema::create('medico_plan', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('medico_id')->unsigned();
@@ -30,7 +30,7 @@ class CreateMedicosPlanes extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('medicos_planes');
+		Schema::drop('medico_plane');
 	}
 
 }

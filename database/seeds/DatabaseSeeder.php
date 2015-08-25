@@ -18,6 +18,10 @@ class DatabaseSeeder extends Seeder {
 		 $this->call('LocalidadesTableSeeder');
 		 $this->call('EspecialidadesTableSeeder');
 		 $this->call('CoberturasTableSeeder');
+		 $this->call('PlanesTableSeeder');
+		 $this->call('MedicoConsultorioTableSeeder');
+		 $this->call('MedicoPlanesTableSeeder');
+		 $this->call('MedicoEspecialidadesTableSeeder');
 	}
 
 }

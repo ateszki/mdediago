@@ -16,4 +16,11 @@ class Localidad extends Model implements SluggableInterface {
         'save_to'    => 'slug',
     ];
 
+    public function consultorios(){
+    	return $this->hasMany("App\Consultorio");
+    }
+
+    public function consultorios_y_medicos(){
+    	return $this->consultorios()->with("medico");
+    }
 }

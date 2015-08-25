@@ -18,13 +18,18 @@
             </li>
           </ul>
         </li>
+         @if(Auth::check())
+         <li><a href="{{URL::to('mi-perfil')}}">{{Auth::user()->name}}</a></li>
+         <li><a href="{{URL::to('auth/logout')}}">Salir</a></li>
+         @else
          <li><a href="#">Registrarme</a>
             <ul>
               <li><a href="{{URL::to('registro')}}">soy pacientes</a></li>
               <li><a href="{{URL::to('registro-profesionales')}}">soy profesional o centro médico</a></li>
             </ul>
          </li>
-        <li><a href="ingresar.html">Ingresar</a></li>
+          <li><a href="{{URL::to('auth/login')}}">Ingresar</a></li>
+         @endif
       </ul>
       <div class="mobile-menu"> <select>
           <option value="index.html">Inicio</option>

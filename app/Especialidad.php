@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
+use App\Consultorio;
 
 class Especialidad extends Model implements SluggableInterface {
 
@@ -14,4 +15,12 @@ class Especialidad extends Model implements SluggableInterface {
         'build_from' => 'nombre',
         'save_to'    => 'slug',
     ];
+
+    public function medicos(){
+    	return $this->belongsToMany("App\Medico");
+    }
+
+    public function consultorios(){
+    	return $this->medicos()->with('consultorio');
+    }
 }

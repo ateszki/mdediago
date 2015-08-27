@@ -8,6 +8,7 @@ use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use App\User;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\RedirectResponse;
 
 class AuthController extends Controller {
 
@@ -87,7 +88,21 @@ class AuthController extends Controller {
     {
         $user = Socialite::driver($provider)->user();
 
-        var_dump($user);
+        $med_user = User::where('email','=',$user->email)->firstOrNew();
+
+        $med_user->provider = $provider;
+        $med_user->provider_id = $user->getId();
+
+		$med_user->name = $user->getName();
+		$med_user->email = $user->getEmail();
+		$med_user->avatar = $user->getAvatar();
+
+		$med_user->save();
+
+		Auth::loginUsingId($med_user->id);
+
+		return new RedirectResponse(url('/home'));
+        //var_dump($user);
         // $user->token;
     }
 }

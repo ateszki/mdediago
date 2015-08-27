@@ -24,6 +24,9 @@ Route::get('/especialidades','RegionesController@especialidades');
 
 Route::get('home', 'FrontController@index');
 
+Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider')->where(["provider"=>"(google|twitter|facebook)"]);
+Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback')->where(["provider"=>"(google|twitter|facebook)"]);
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

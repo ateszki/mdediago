@@ -88,7 +88,7 @@ class AuthController extends Controller {
     {
         $user = Socialite::driver($provider)->user();
 
-        $med_user = User::where('email','=',$user->email)->firstOrNew();
+        $med_user = User::firstOrNew(['email'=>$user->email]);
 
         $med_user->provider = $provider;
         $med_user->provider_id = $user->getId();

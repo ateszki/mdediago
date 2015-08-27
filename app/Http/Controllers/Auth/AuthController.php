@@ -87,6 +87,7 @@ class AuthController extends Controller {
     {
         $user = Socialite::driver($provider)->user();
 
+        var_dump($user);
         // $user->token;
     }
 }

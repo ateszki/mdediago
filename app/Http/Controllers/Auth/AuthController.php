@@ -89,11 +89,22 @@ class AuthController extends Controller {
     {
         $user = Socialite::driver($provider)->user();
 
+        if($provider == 'twitter'){
+        	$med_user = User::firstOrNew(["provider"=>"twitter","provider_id"=>$user->getId()]);
+
+        	if($med_user->id == ''){
+        		return view('auth.logintwitter',["u"=>$user]);
+        	} else {
+        		Auth::loginUsingId($med_user->id);
+				return new RedirectResponse(url('/home'));
+        	}
+
+        }
+
         $med_user = User::firstOrNew(['email'=>$user->getEmail()]);
 
         $med_user->provider = $provider;
         $med_user->provider_id = $user->getId();
-		$med_user->email = $user->getEmail();
 		$med_user->name = $user->getName();
 		$med_user->email = $user->getEmail();
 		$med_user->avatar = $user->getAvatar();
@@ -102,8 +113,37 @@ class AuthController extends Controller {
 
 		Auth::loginUsingId($med_user->id);
 
-		return new RedirectResponse(url('/home'));
+		return redirect()->intended('dashboard');
+		//return new RedirectResponse(url('/home'));
         //var_dump($user);
         // $user->token;
     }
+
+   public function twitterCallback()
+    {
+        
+    	$data = Input::all();
+
+    	$u = [
+    		"provider"=>"twitter",
+    		"provider_id"=>$data["provider_id"],
+    		"name" => $data["name"],
+    		"email" => $data["email"],
+    		"avatar" => $data["avatar"],
+    	];
+
+        $med_user = User::firstOrNew(['email'=>$u["email"]]);
+
+        $med_user->fill($u);
+        
+		$med_user->save();
+
+		Auth::loginUsingId($med_user->id);
+
+		//return new RedirectResponse(url('/home'));
+		return redirect()->intended('home');
+        //var_dump($user);
+        // $user->token;
+    }
+
 }

@@ -26,6 +26,7 @@ Route::get('home', 'FrontController@index');
 
 Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider')->where(["provider"=>"(google|twitter|facebook)"]);
 Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback')->where(["provider"=>"(google|twitter|facebook)"]);
+Route::post('auth/twitter/callback', 'Auth\AuthController@twitterCallback');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

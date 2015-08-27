@@ -52,6 +52,13 @@
 							</div>
 						</div>
 					</form>
+
+					<div>
+					<h2>O ingresa con</h2>
+					<div style="margin:30px 0;"><a href="{{URL::to('auth/facebook')}}" class="button3" ><li class="fa fa-facebook"></li> Facebook</a></div>
+					<div style="margin:30px 0;"><a href="{{URL::to('auth/twitter')}}" class="button3"><li class="fa fa-twitter"></li> Twitter</a></div>
+					<div style="margin:30px 0;"><a href="{{URL::to('auth/google')}}" class="button3"><li class="fa fa-google"></li> Google</a></div>
+					</div>
             
         </div>
     </div>

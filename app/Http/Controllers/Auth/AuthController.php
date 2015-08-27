@@ -9,6 +9,7 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 use App\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\RedirectResponse;
+use Auth;
 
 class AuthController extends Controller {
 

@@ -10,6 +10,7 @@ use App\User;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\RedirectResponse;
 use Auth;
+use Input;
 
 class AuthController extends Controller {
 
@@ -113,7 +114,7 @@ class AuthController extends Controller {
 
 		Auth::loginUsingId($med_user->id);
 
-		return redirect()->intended('dashboard');
+		return redirect()->intended('home');
 		//return new RedirectResponse(url('/home'));
         //var_dump($user);
         // $user->token;

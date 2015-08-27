@@ -42,7 +42,7 @@ return [
 	'twitter' => [
 	    'client_id' => env('TWITTER_ID', ''),
 	    'client_secret' => env('TWITTER_SECRET', ''),
-	    'redirect' => 'http://www.medadvisors.com/auth/twitter/callbak',
+	    'redirect' => 'http://www.medadvisors.com/auth/twitter/callback',
 	],
 	'google' => [
 	    'client_id' => env('GOOGLE_ID', ''),

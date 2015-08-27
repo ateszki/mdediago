@@ -37,16 +37,16 @@ return [
 	'facebook' => [
 	    'client_id' => env('FACEBOOK_ID', ''),
 	    'client_secret' => env('FACEBOOK_SECRET', ''),
-	    'redirect' => 'http://www.medadvisors.com/auth/facebook',
+	    'redirect' => 'http://www.medadvisors.com/auth/facebook/callback',
 	],
 	'twitter' => [
 	    'client_id' => env('TWITTER_ID', ''),
 	    'client_secret' => env('TWITTER_SECRET', ''),
-	    'redirect' => 'http://www.medadvisors.com/auth/twitter',
+	    'redirect' => 'http://www.medadvisors.com/auth/twitter/callbak',
 	],
 	'google' => [
 	    'client_id' => env('GOOGLE_ID', ''),
 	    'client_secret' => env('GOOGLE_SECRET', ''),
-	    'redirect' => 'http://www.medadvisors.com/auth/google',
+	    'redirect' => 'http://www.medadvisors.com/auth/google/callback',
 	],
 ];

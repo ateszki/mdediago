@@ -88,11 +88,11 @@ class AuthController extends Controller {
     {
         $user = Socialite::driver($provider)->user();
 
-        $med_user = User::firstOrNew(['email'=>$user->email]);
+        $med_user = User::firstOrNew(['email'=>$user->getEmail()]);
 
         $med_user->provider = $provider;
         $med_user->provider_id = $user->getId();
-
+		$med_user->email = $user->getEmail();
 		$med_user->name = $user->getName();
 		$med_user->email = $user->getEmail();
 		$med_user->avatar = $user->getAvatar();

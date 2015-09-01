@@ -12,7 +12,7 @@ class CreateEnfermEspePivot extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('enfermedades_especialidades', function(Blueprint $table)
+		Schema::create('enfermedad_especialidad', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('enfermedad_id')->unsigned();
@@ -30,7 +30,7 @@ class CreateEnfermEspePivot extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('enfermedades_especialidades');
+		Schema::drop('enfermedad_especialidad');
 	}
 
 }

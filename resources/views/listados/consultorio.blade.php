@@ -1,6 +1,6 @@
                 <div class="col-9 media100" style="margin-top:-10px;">
                                   <p>
-                                  <h2 style="margin-bottom:5px;;"><a href="doctors_inside.html" class="linktit">{{ $consultorio->medico->titulo.' '.$consultorio->medico->nombre.' '.$consultorio->medico->apellido }}</a> </h2>
+                                  <h2 style="margin-bottom:5px;;"><a href="{{URL::to('profesionales/'.$consultorio->medico->slug)}}" class="linktit">{{ $consultorio->medico->titulo.' '.$consultorio->medico->nombre.' '.$consultorio->medico->apellido }}</a> </h2>
                                   
                                   <div class="ratio">
                           <ul>

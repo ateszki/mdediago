@@ -21,6 +21,9 @@ Route::get('/regiones/{nombre_provincia}','RegionesController@localidades');
 Route::get('/regiones','RegionesController@index');
 Route::get('/especialidades/{nombre_especialidad}','RegionesController@especialidad');
 Route::get('/especialidades','RegionesController@especialidades');
+Route::get('/profesionales/{profesional}', 'MedicosController@medico');
+
+Route::post('/ajax/opinion','OpinionesController@opinar');
 
 Route::get('home', 'FrontController@index');
 

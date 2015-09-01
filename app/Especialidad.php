@@ -21,6 +21,6 @@ class Especialidad extends Model implements SluggableInterface {
     }
 
     public function consultorios(){
-    	return $this->medicos()->with('consultorio');
+    	return $this->medicos()->with('consultorios');
     }
 }

@@ -17,11 +17,13 @@ class DatabaseSeeder extends Seeder {
 		 $this->call('UserTableSeeder');
 		 $this->call('LocalidadesTableSeeder');
 		 $this->call('EspecialidadesTableSeeder');
+		 $this->call('EnfermedadesTableSeeder');
 		 $this->call('CoberturasTableSeeder');
 		 $this->call('PlanesTableSeeder');
 		 $this->call('MedicoConsultorioTableSeeder');
 		 $this->call('MedicoPlanesTableSeeder');
 		 $this->call('MedicoEspecialidadesTableSeeder');
+		 $this->call('MedicoEnfermedadesTableSeeder');
 	}
 
 }

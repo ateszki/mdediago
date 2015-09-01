@@ -1,7 +1,7 @@
-                @foreach($medico->consultorio as $consultorio)
+                @foreach($medico->consultorios as $consultorio)
                 <div class="col-9 media100" style="margin-top:-10px;">
                                   <p>
-                                  <h2 style="margin-bottom:5px;;"><a href="doctors_inside.html" class="linktit">{{ $medico->titulo.' '.$medico->nombre.' '.$medico->apellido }}</a> </h2>
+                                  <h2 style="margin-bottom:5px;;"><a href="{{URL::to('profesionales/'.$medico->slug)}}" class="linktit">{{ $medico->titulo.' '.$medico->nombre.' '.$medico->apellido }}</a> </h2>
                                   
                                   <div class="ratio">
                           <ul>

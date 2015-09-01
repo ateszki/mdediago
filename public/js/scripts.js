@@ -86,6 +86,45 @@ jQuery(function($) {
 
     });
 
+    //opinar y valorar
+    $("#formopinar").submit(function(event){
+        event.preventDefault();
+        var url = $(this).attr("action");
+        $.ajax({
+           type: "POST",
+           url: url,
+           data: $("#formopinar").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+                $("#formopinar").hide();
+                $("div.opinion-gracias").show();
+               //return true; // show response from the php script.
+           },
+           fail: function(data){
+            alert('ocurrió un error');
+           }
+         });
+
+    return false;
+    });
+
+
+
+
+    $("a[data-calificador]").click(function(event){
+        event.preventDefault();
+        var calificador = $(this).data("calificador");
+        var seleccion = $(this).data("value");
+        $("#"+calificador).val(seleccion);
+        $("a[data-calificador='"+calificador+"']").each(function(index){
+            if(index+1<=seleccion){
+                //console.log($($(this).children("img")[0]).attr('src'));
+                $($(this).children("img")[0]).attr("src","/css/images/hart.png");
+            } else {
+                $($(this).children("img")[0]).attr("src","/css/images/hart_empty.png");
+            }
+        }); 
+    });
 
 });
 

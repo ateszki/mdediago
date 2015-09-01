@@ -26,6 +26,12 @@ jQuery(function($) {
         $( "#tabs" ).tabs();
     }
 
+    $("a.gotoOpinaYValora").click(function(event){
+        event.preventDefault();
+        $( "#tabs" ).tabs( "option", "active", 3 );
+    });
+    
+
 });
 
 

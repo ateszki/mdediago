@@ -7,7 +7,7 @@
                             @for($i=1;$i<6;$i++)
             <li style="float:left; margin-right:5px;"><a href="#"><img src="@if($i<=$consultorio->medico->valoracion_general['promedios']['total']){{URL::to('css/images/hart.png')}}@else{{URL::to('css/images/hart_empty.png')}}@endif" alt="ratio"/></a> &nbsp;</li>
             @endfor<li>
-            <a href="#" class="linkgral">{{$consultorio->medico->valoracion_general["cant"]}} opiniones</a></li>
+            <a href="{{URL::to('profesionales/'.$consultorio->medico->slug)}}#tabs-3" class="linkgral">{{$consultorio->medico->valoracion_general["cant"]}} opiniones</a></li>
                           </ul>
                         </div>      
                 <br>

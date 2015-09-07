@@ -5,12 +5,10 @@
                                   
                                   <div class="ratio">
                           <ul>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart_empty.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart_empty.png') }}" alt="ratio"/></a></li>
-                            <li><a href="#" class="linkgral">14 opiniones</a></li>
+                            @for($i=1;$i<6;$i++)
+            <li style="float:left; margin-right:5px;"><a href="#"><img src="@if($i<=$medico->valoracion_general['promedios']['total']){{URL::to('css/images/hart.png')}}@else{{URL::to('css/images/hart_empty.png')}}@endif" alt="ratio"/></a> &nbsp;</li>
+            @endfor<li>
+            <a href="{{URL::to('profesionales/'.$medico->slug)}}#tabs-3" class="linkgral">{{$medico->valoracion_general["cant"]}} opiniones</a></li>
                           </ul>
                         </div>      
                 <br>

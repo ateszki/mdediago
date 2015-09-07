@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
-
+use URL;
 class Provincia extends Model implements SluggableInterface {
 	use SluggableTrait;
 
@@ -13,6 +13,9 @@ class Provincia extends Model implements SluggableInterface {
     ];
 	public function localidades(){
 		return $this->hasMany('App\Localidad');
+	}
+	public function getUrlAttribute(){
+		return URL::to("regiones/".$this->slug);
 	}
 
 }

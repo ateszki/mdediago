@@ -4,6 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
 use App\Consultorio;
+use URL;
 
 class Especialidad extends Model implements SluggableInterface {
 
@@ -22,5 +23,8 @@ class Especialidad extends Model implements SluggableInterface {
 
     public function consultorios(){
     	return $this->medicos()->with('consultorios');
+    }
+    public function getUrlAttribute(){
+        return URL::to("especialidades/".$this->slug);
     }
 }

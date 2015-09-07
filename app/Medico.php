@@ -3,7 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
-
+use URL;
 class Medico extends Model  implements SluggableInterface{
 
 	protected $fillable = ['nombre','apellido','titulo','web','user_id','telefono','slug','especialidad'];
@@ -87,5 +87,9 @@ class Medico extends Model  implements SluggableInterface{
 
 	public function getTituNomApeAttribute(){
 		return $this->titulo.' '.$this->nombre.' '.$this->apellido;
+	}
+
+	public function getUrlAttribute(){
+		return URL::to("profesionales/".$this->slug);
 	}
 }

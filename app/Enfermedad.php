@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\SluggableInterface;
 use Cviebrock\EloquentSluggable\SluggableTrait;
+use URL;
 
 class Enfermedad extends Model {
 
@@ -18,5 +19,7 @@ class Enfermedad extends Model {
     public function medicos(){
     	return $this->belongsToMany("App\Medico");
     }
-
+	public function getUrlAttribute(){
+		return URL::to("enfermedades/".$this->slug);
+	}
 }

@@ -6,7 +6,7 @@
     <div class="logo"><a href="index.html"><img src="{{ URL::to('css/images/air.png') }}" alt=""></a></div>
     <div class="menu2">
    
- <div style="float:left;"><input name="" style="width:350px;  margin-top:-30px; padding:5px; border-color:#099; border-radius:6px 0px 0px 6px;" type="text" placeholder="Buscar profesionales, especialidades, enfermedades, etc"></div>
+ <div style="float:left;"><input class="txtBuscar" name="" style="width:350px;  margin-top:-30px; padding:5px; border-color:#099; border-radius:6px 0px 0px 6px;" type="text" placeholder="Buscar profesionales, especialidades, enfermedades, etc"></div>
  <div style=" float:left;border-radius:0px 6px 6px 0px; margin-top:-11px; background-color:#02aabb; text-align:center; padding-top:10px; width:40px; height:40px; margin-right:20px;"><div class="fa fa-search" style="color:#FFF;"></div></div>
       <ul class="vertical-line3 cf">
       

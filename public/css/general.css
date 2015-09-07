@@ -4857,6 +4857,37 @@ label,
 }
 
 
-
+  .ui-autocomplete-category {
+    font-weight: bold;
+    padding: 1em .6em .2em;
+    margin:  0;
+    line-height: 1.5;
+    border: solid 1px #000;
+    border-top:none;
+  }
+  .ui-menu-item {
+    padding: .2em .4em;
+    margin: 0;
+    border: solid 1px #000;
+    border-top:none;
+  }
+  .ui-helper-hidden-accessible{
+    display:none;
+  }
+    .ui-autocomplete {
+    max-width:350px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: solid 1px #000;
+  }
+  /* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+  * html .ui-autocomplete {
+    height: 100px;
+  }
 
 

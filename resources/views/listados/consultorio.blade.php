@@ -1,15 +1,13 @@
                 <div class="col-9 media100" style="margin-top:-10px;">
                                   <p>
-                                  <h2 style="margin-bottom:5px;;"><a href="{{URL::to('profesionales/'.$consultorio->medico->slug)}}" class="linktit">{{ $consultorio->medico->titulo.' '.$consultorio->medico->nombre.' '.$consultorio->medico->apellido }}</a> </h2>
+                                  <h2 style="margin-bottom:5px;;"><a href="{{URL::to('profesionales/'.$consultorio->medico->slug)}}" class="linktit">{{ $consultorio->medico->titu_nom_ape }}</a> </h2>
                                   
                                   <div class="ratio">
                           <ul>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart_empty.png') }}" alt="ratio"/></a></li>
-                            <li style="float:left; margin-right:5px;"><a href="#"><img src="{{ URL::to('css/images/hart_empty.png') }}" alt="ratio"/></a></li>
-                            <li><a href="#" class="linkgral">14 opiniones</a></li>
+                            @for($i=1;$i<6;$i++)
+            <li style="float:left; margin-right:5px;"><a href="#"><img src="@if($i<=$consultorio->medico->valoracion_general['promedios']['total']){{URL::to('css/images/hart.png')}}@else{{URL::to('css/images/hart_empty.png')}}@endif" alt="ratio"/></a> &nbsp;</li>
+            @endfor<li>
+            <a href="#" class="linkgral">{{$consultorio->medico->valoracion_general["cant"]}} opiniones</a></li>
                           </ul>
                         </div>      
                 <br>

@@ -16,6 +16,8 @@ Route::get('/', function ()    {
     return view('mantenimiento');
 });
 
+Route::get('buscador/autocomplete','BuscadorController@autocomplete');
+
 Route::get('/regiones/{nombre_provincia}/{nombre_localidad}','RegionesController@localidad');
 Route::get('/regiones/{nombre_provincia}','RegionesController@localidades');
 Route::get('/regiones','RegionesController@index');
@@ -30,6 +32,7 @@ Route::get('home', 'FrontController@index');
 Route::get('auth/{provider}', 'Auth\AuthController@redirectToProvider')->where(["provider"=>"(google|twitter|facebook)"]);
 Route::get('auth/{provider}/callback', 'Auth\AuthController@handleProviderCallback')->where(["provider"=>"(google|twitter|facebook)"]);
 Route::post('auth/twitter/callback', 'Auth\AuthController@twitterCallback');
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

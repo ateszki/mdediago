@@ -16,6 +16,14 @@ Route::get('/', function ()    {
     return view('mantenimiento');
 });
 
+Route::get('/solohead', function ()    {
+    return view('solohead');
+});
+
+Route::get('/solofoot', function ()    {
+    return view('solofoot');
+});
+
 Route::get('buscador/autocomplete','BuscadorController@autocomplete');
 
 Route::get('/regiones/{nombre_provincia}/{nombre_localidad}','RegionesController@localidad');

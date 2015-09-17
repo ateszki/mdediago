@@ -1,0 +1,10 @@
+{
+	"name": "Medadvisors",
+	"description": "Extension de SnowFlat responsive theme with RTL support",
+	"version": "1.4",
+	"date": "2014-03-11",
+	"author": "Cinnamon",
+	"author_uri": "http://www.cinnamonideas.com",
+	"license": "GPLv2",
+	"min_q2a": "1.7"
+}

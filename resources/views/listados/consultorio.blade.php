@@ -22,3 +22,7 @@
                     </strong>@foreach ($consultorio->medico->coberturas() as $c){{ $c->nombre }} @endforeach</p>
                 </div>
                 <div  class="borderbottom"></div>
+                <script>
+                  consultorios.push(["{{ $consultorio->medico->titu_nom_ape }}",{{$consultorio->lat}},{{$consultorio->lon}},"{{$consultorio->domicilio_completo}}"]);
+                </script>
+                

@@ -1,7 +1,7 @@
                 @foreach($medico->consultorios as $consultorio)
                 <div class="col-9 media100" style="margin-top:-10px;">
                                   <p>
-                                  <h2 style="margin-bottom:5px;;"><a href="{{URL::to('profesionales/'.$medico->slug)}}" class="linktit">{{ $medico->titulo.' '.$medico->nombre.' '.$medico->apellido }}</a> </h2>
+                                  <h2 style="margin-bottom:5px;;"><a href="{{URL::to('profesionales/'.$medico->slug)}}" class="linktit">{{ $medico->titu_nom_ape }}</a> </h2>
                                   
                                   <div class="ratio">
                           <ul>
@@ -14,7 +14,7 @@
                 <br>
       
                   <p style="font-size:13px; color:#333;  margin-bottom:0px;">@foreach($medico->especialidades as $espe){{ $espe->nombre}} @endforeach</p>
-                  <p style="font-size:13px; color:#666; margin-bottom:-20px;"> {{ $consultorio->domicilio_completo }} | <a href="#" class="leermas">ver mapa</a></p>
+                  <p style="font-size:13px; color:#666; margin-bottom:-20px;"> {{ $consultorio->domicilio_completo }} | <a href="#" class="leermas vermapa">ver mapa</a></p>
                   </p>
                 </div>
                 <div class="col-3 media100 mediahorario gris">
@@ -23,4 +23,7 @@
                     </strong>@foreach ($medico->coberturas() as $c){{ $c->nombre }} @endforeach</p>
                 </div>
                 <div  class="borderbottom"></div>
+                <script>
+                  consultorios.push(["{{ $medico->titu_nom_ape }}",{{$consultorio->lat}},{{$consultorio->lon}},"{{$consultorio->domicilio_completo}}"]);
+                </script>
                 @endforeach

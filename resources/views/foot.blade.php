@@ -68,10 +68,14 @@
 <script src="{{ URL::to('js/libs/jquery.flexslider-min.js') }}"></script> 
 
 <!-- UI -->
-    <script src="{{ URL::to('js/libs/jquery-1.10.2.min.js') }}"></script>
     <script src="{{ URL::to('js/libs/jquery-ui.js') }}"></script>
     <script src="{{ URL::to('js/scripts.ui.js') }}"></script>
 <!-- Custom --> 
 <script src="{{ URL::to('js/scripts.js') }}"></script>
+@if(\Request::is('regiones/*')||\Request::is('especialidades/*'))
+<script src="{{ URL::to('js/maps.js') }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC346el-Ipiq-K8Lgz46sT8We-NpN0uDlo&callback=initMap" async defer></script>
+@endif
+ 
 </body>
 </html>

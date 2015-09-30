@@ -24,7 +24,7 @@ Route::get('/solofoot', function ()    {
     return view('solofoot');
 });
 
-Route::get('buscador/autocomplete','BuscadorController@autocomplete');
+Route::get('buscador/autocomplete/{tipo?}','BuscadorController@autocomplete');
 
 Route::get('/regiones/{nombre_provincia}/{nombre_localidad}','RegionesController@localidad');
 Route::get('/regiones/{nombre_provincia}','RegionesController@localidades');

@@ -126,5 +126,14 @@ jQuery(function($) {
         }); 
     });
 
+    $("a.vermapa").each(function(index){
+        var i = index;
+        $(this).click(function(event){
+            event.preventDefault();
+            google.maps.event.trigger(markers[i], 'click');
+            window.scrollTo(0,150);
+        });
+    });
+
 });
 

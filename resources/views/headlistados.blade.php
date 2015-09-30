@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>@yield("titulo")</title>
+<title>@if(isset($titulo)){{$titulo}} - @endif Medadvisors</title>
 <meta name="description" content="HTML framework description">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,4 +29,9 @@ body {
 <!--[if IE]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+<script>
+var consultorios = [
+  //['Dr. Pirulo', -33.890542, 151.274856, 'direccion'],
+];
+</script
 </head>

@@ -21,8 +21,15 @@ class Especialidad extends Model implements SluggableInterface {
     	return $this->belongsToMany("App\Medico");
     }
 
-    public function consultorios(){
-    	return $this->medicos()->with('consultorios');
+    public function consultorios($localidad_id=null){
+        if($localidad_id == null){
+            return $this->medicos()->with('consultorios');
+        } else {
+            return $this->medicos()->with(['consultorios'=>function($query) use ($localidad_id){
+                $query->where('localidad_id','=',$localidad_id);
+            }]);
+        }
+    	
     }
     public function getUrlAttribute(){
         return URL::to("especialidades/".$this->slug);

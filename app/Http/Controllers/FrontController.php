@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 use App\Medico;
+use App\Opinion;
+use App\Centro;
 class FrontController extends Controller {
 
 	/**
@@ -30,8 +32,13 @@ class FrontController extends Controller {
 				}
 			}
 		}
-		
-		return view('inicio',["preguntas"=>$preguntas_filtradas]);
+		$cuentas = [];
+
+		$cuentas["profesionales"] = Medico::count();
+		$cuentas["centros"] = Centro::count();
+		$cuentas["opiniones"] = Opinion::count();
+
+		return view('inicio',["preguntas"=>$preguntas_filtradas,"cuentas"=>$cuentas]);
 	}
 
 

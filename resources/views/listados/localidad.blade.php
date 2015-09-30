@@ -6,12 +6,8 @@
 <div class="wrapper" style="padding-top: 0px; margin-top:20px;">
   <div class="about_doctors">
   
-  <ul class="breadcrumb">        <li><a  class="linkgral volverlink"  href="javascript:history.back();">← VOLVER</a> <span class="divider"> I </span></li>
-        <li><a  class="linkgral"  href="index.html">Inicio</a> <span class="divider">/</span></li>
-<li><a class="linkgral" href="search_especialidad.html">Especialidades</a> <span class="divider">/</span></li>
-        <li><a class="linkgral" href="#">Profesionales</a> <span class="divider">/</span></li>
-                <li class="linkgral active">Cirujanos Plásticos</li>
-</ul>
+    @include('breadcrum')
+
 
 
 
@@ -20,7 +16,7 @@
        
        
         <div class="name_doctors">
-          <h1 style="margin-bottom:5px;">Especialidades en Capital Federal (CABA) Argentina</h1>
+          <h1 style="margin-bottom:5px;">Profesionales en {{$titulo}}</h1>
           <div style=" margin-top:10px; width:100%; height:40px; padding-top:10px;">
           <table width="100%%" border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -86,20 +82,7 @@
                 
               </div>
               <!-- fin contenedor columna izq --> 
-              
-              <!-- Abro contenedor columna derecha con mapa -->
-              
-              <div class="media100 mediatop col-4" style="float:left; padding-left:30px;">
-                <div>
-                  <iframe src="https://mapsengine.google.com/map/embed?mid=zU1qhzJdvLzQ.kWPnwtNqHd4o" width="100%" height="500"></iframe>
-                </div>
-                
-                <div id="banner" style="margin-bottom:5px;"><img src="http://placehold.it/277x370" width="100%" height="auto"></div>
-                                <div id="banner"><img src="http://placehold.it/277x370" width="100%" height="auto"></div>
-
-                
-              </div>
-              <!-- fin contenedor columna derecha con mapa --> 
+              @include('listados.colderecha')
               
             </div>
           </div>

@@ -73,7 +73,7 @@
           <div style="padding-left:50px; padding-right:50px; padding-top:20px; padding-bottom:20px; width:100%; margin:0 auto; ">
           <form name="form" method="post" action="#">
              <label for="last-name">Nombre del doctor: </label>
-                <input class="default_field" placeholder="Busca Nombre, especialidad, enfermedad, ciudad..." type="text" id="last-name"  name="last-name" style="width:100%"/>
+                <input class="default_field txtBuscar" placeholder="Busca Nombre, especialidad, enfermedad, ciudad..." type="text" id="last-name"  name="last-name" style="width:100%"/>
                 </div>
                 
             <div class="submitsec">
@@ -115,17 +115,17 @@
     <div class="icon cf">
       <div class="icon1">
         <div class="col-icon cf">
-          <div class="text_icons"> <b>88.373</b> <span class="about_doctor">Profesionales</span> </div>
+          <div class="text_icons"> <b>{{$cuentas["profesionales"]}}</b> <span class="about_doctor">Profesionales</span> </div>
         </div>
       </div>
       <div class="icon2">
         <div class="col-icon cf">
-          <div class="text_icons"> <b>8.321</b> <span class="about_clinic">Centros médicos</span> </div>
+          <div class="text_icons"> <b>{{$cuentas["centros"]}}</b> <span class="about_clinic">Centros médicos</span> </div>
         </div>
       </div>
       <div class="icon3">
         <div class="col-icon cf">
-          <div class="text_icons"> <b>29.838</b> <span class="about_place">Opiniones</span> </div>
+          <div class="text_icons"> <b>{{$cuentas["opiniones"]}}</b> <span class="about_place">Opiniones</span> </div>
         </div>
       </div>
     </div>

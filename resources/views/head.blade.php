@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<title>@yield("titulo")</title>
+<title>@if(isset($titulo)){{$titulo}} - @endif Medadvisors</title>
 <meta name="description" content="HTML framework description">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
